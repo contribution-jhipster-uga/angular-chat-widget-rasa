@@ -36,3 +36,5 @@ Inputs :
 | botAvatar | url or path | https://cdn.dribbble.com/users/275794/screenshots/3128598/gbot_800.png | The avatar of the bot |
 | userAvatar | url or path | https://storage.proboards.com/6172192/images/gKhXFw_5W0SD4nwuMev1.png | The avatar of the user |
 | url | url  | http://localhost:5002 | The url to connect to the Rasa bot |
+| startingMessage | string | Hi, how can we help you? | The message to display when the chat is open |
+| opened | boolean | true | Set to true to open automaticaly when on the page or false to wait for a click |

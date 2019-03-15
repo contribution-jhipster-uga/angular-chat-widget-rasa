@@ -19,6 +19,7 @@ export class ChatWidgetComponent implements OnInit {
   @Input() public userAvatar: string = `https://storage.proboards.com/6172192/images/gKhXFw_5W0SD4nwuMev1.png`
   @Input() public url: string = 'http://localhost:5002'
   @Input() public startingMessage: string = 'Hi, how can we help you?'
+  @Input() public opened: boolean = true
 
   public _visible = false
 
@@ -83,7 +84,9 @@ export class ChatWidgetComponent implements OnInit {
       status: 'online',
       avatar: this.botAvatar,
     };
-    setTimeout(() => this.visible = true, 1000)
+    if(this.opened){
+      setTimeout(() => this.visible = true, 1000)
+    }
     setTimeout(() => {
       this.addMessage(this.operator, this.startingMessage, 'received')
     }, 1500)
