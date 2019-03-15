@@ -1,0 +1,42 @@
+<div class="wrapper {{theme}}">
+  <div class="chat-box" *ngIf="visible" [@fadeInOut]="visible">
+    <div class="chat-box-header">
+      <div class="">
+        <div class="operator-status">
+          {{operator.status}}
+          <span class="operator-status-online">●</span>
+          <button class="chat-button-header" (click)="toggleChat()">✕</button>
+        </div>
+        <chat-avatar [image]="operator.avatar"></chat-avatar>
+        <h3 class="operator-name">
+          {{operator.name}}
+        </h3>
+      </div>
+    </div>
+    <div class="chat-box-main">
+      <div class="chat-message-bottom" #bottom></div>
+      <ng-container *ngFor="let message of messages">
+        <div class="chat-message" [class.chat-message-received]="message.type === 'received'"
+             [@fadeIn]
+             [class.chat-message-sent]="message.type === 'sent'">
+          <div >
+            <chat-avatar [image]="message.from.avatar" class="chat-message-from-avatar"></chat-avatar>
+            <div class="chat-message-text">
+              {{message.text}}
+            </div>
+          </div>
+          <div class="chat-message-date">
+            {{message.date | date: 'short'}}
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="chat-box-footer">
+      <chat-input (send)="sendMessage($event)" (dismiss)="toggleChat()" [focus]="focus"></chat-input>
+    </div>
+  </div>
+  <button class="chat-button" (click)="toggleChat()">
+    <span [@fadeIn] *ngIf="visible">✕</span>
+    <span [@fadeIn] *ngIf="!visible">?</span>
+  </button>
+</div>
