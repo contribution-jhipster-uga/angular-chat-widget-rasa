@@ -2,23 +2,37 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
-## Code scaffolding
+##Installation
 
-Run `ng generate component component-name --project chatbot-rasa` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project chatbot-rasa`.
-> Note: Don't forget to add `--project chatbot-rasa` or else it will be added to the default project in your `angular.json` file. 
+Install `angular-chat-widget-rasa` from `npm`
 
-## Build
+```bash
+npm i angular-chat-widget-rasa --save
+```
+Add the package to your module
 
-Run `ng build chatbot-rasa` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+import { ChatbotRasaModule } from 'angular-chat-widget-rasa';
 
-## Publishing
+@NgModule({
+  imports: [ChatbotRasaModule]
+})
+```
 
-After building your library with `ng build chatbot-rasa`, go to the dist folder `cd dist/chatbot-rasa` and run `npm publish`.
+##Usage
 
-## Running unit tests
+Add the component to your page
 
-Run `ng test chatbot-rasa` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+<chat-widget botName="MyBot" url="http://localhost:5002" ></chat-widget>
+```
 
-## Further help
+Inputs :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+|Name|Type|Default|Description|
+|:---:|:---:|:---:|:---:|
+| theme | blue, grey or red | blue | The theme of the widget |
+| botName | string | Bot | The name of the bot to display |
+| botAvatar | url or path | https://cdn.dribbble.com/users/275794/screenshots/3128598/gbot_800.png | The avatar of the bot |
+| userAvatar | url or path | https://storage.proboards.com/6172192/images/gKhXFw_5W0SD4nwuMev1.png | The avatar of the user |
+| url | url  | http://localhost:5002 | The url to connect to the Rasa bot |
