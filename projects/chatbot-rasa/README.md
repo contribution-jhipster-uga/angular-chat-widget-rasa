@@ -2,7 +2,7 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
-##Installation
+## Installation
 
 Install `angular-chat-widget-rasa` from `npm`
 
@@ -19,7 +19,7 @@ import { ChatbotRasaModule } from 'angular-chat-widget-rasa';
 })
 ```
 
-##Usage
+## Usage
 
 Add the component to your page
 
