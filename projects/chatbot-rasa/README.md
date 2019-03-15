@@ -4,6 +4,10 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ![](example.png)
 
+## Prerequesites
+
+A [Rasa](https://rasa.com/) bot exposed with the SocketIO protocol.
+
 ## Installation
 
 Install `angular-chat-widget-rasa` from `npm`
