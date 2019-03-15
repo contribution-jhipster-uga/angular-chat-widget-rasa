@@ -1,8 +1,29 @@
 {
-  "name": "chatbot-rasa",
-  "version": "0.0.1",
+  "name": "angular-chat-widget-rasa",
+  "version": "1.0.6",
+  "description": "A chatbot widget that is able to connect to a rasa chatbot using SocketIO",
+  "keywords": [
+    "angular",
+    "widget",
+    "rasa",
+    "chatbot"
+  ],
+  "homepage": "https://github.com/contribution-jhipster-uga/angular-chat-widget-rasa",
+  "author": {
+    "name": "Contribution Jhipster UGA, Julien COURTIAL, Hugo GROS-DAILLON, Cédric LAFRASSE, Bastien TERRIER (https://github.com/contribution-jhipster-uga/)",
+    "email": "contribution.jhipster.uga@gmail.com",
+    "url": "https://github.com/contribution-jhipster-uga"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contributionjhipsteruga/angular-chat-widget-rasa.git"
+  },
   "peerDependencies": {
     "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/core": "^7.2.0",
+    "@angular/animations": "^7.2.9",
+    "rxjs": "^6.4.0",
+    "socket.io-client": "^2.2.0"
   }
 }
