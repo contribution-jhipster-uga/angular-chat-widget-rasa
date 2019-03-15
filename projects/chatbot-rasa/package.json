@@ -1,6 +1,6 @@
 {
   "name": "angular-chat-widget-rasa",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A chatbot widget that is able to connect to a rasa chatbot using SocketIO",
   "keywords": [
     "angular",
