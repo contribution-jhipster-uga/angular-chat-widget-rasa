@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "chatbot-rasa": [
+        "dist/chatbot-rasa"
+      ],
+      "chatbot-rasa/*": [
+        "dist/chatbot-rasa/*"
+      ]
+    }
   }
 }
