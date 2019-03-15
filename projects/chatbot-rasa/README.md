@@ -2,6 +2,8 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
+[](!Peek 15-03-2019 14-07.gif)
+
 ## Installation
 
 Install `angular-chat-widget-rasa` from `npm`
