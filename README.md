@@ -1,6 +1,8 @@
-# AngularChatWidgetRasa
+# Angular Chat Widget Rasa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+
+An angular chatbot widget to use with a bot using Rasa on SocketIO. Based on beeman's [widget](https://github.com/beeman/angular-elements-chat-widget)
 
 ![](projects/chatbot-rasa/example.gif)
 
