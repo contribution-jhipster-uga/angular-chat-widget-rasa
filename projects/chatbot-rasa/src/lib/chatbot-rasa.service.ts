@@ -16,11 +16,9 @@ export class ChatService {
   public connect(url: string){
     this.socket = io(url);
     this.socket.on('connect', () => {
-      console.log(`connect:${this.socket.id}`);
       this.socket.emit('session_request', {'session_id':this.socket.id})
     });
     this.socket.on('session_confirm', (remote_id) => {
-      console.log(`session_confirm:${this.socket.id} session_id:${remote_id}`);
     })
     this.socket.on('connect_error', (error) => {
       console.log(error);
